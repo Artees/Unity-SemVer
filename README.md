@@ -30,3 +30,5 @@ foreach (var message in result.Errors)
     Debug.LogWarning(message);
 }
 ```
+
+![Property drawer](https://github.com/Artees/Unity-SemVer/raw/master/SemVerDrawer.png)
