@@ -1,0 +1,22 @@
+.idea/
+Assets/Scenes/
+Assets/Scenes.meta
+Assets/Scripts/
+Assets/Scripts.meta
+Assets/UnityCloud/
+Assets/UnityCloud.meta
+Build/
+Library/
+Logs/
+obj/
+Packages/
+ProjectSettings/
+Research/
+Temp/
+.collabignore
+Artees.SemanticVersioning.csproj
+Artees.SemanticVersioning.Editor.csproj
+Assembly-CSharp.csproj
+SemVerDrawer.png
+Tests.csproj
+Unity SemVer.sln

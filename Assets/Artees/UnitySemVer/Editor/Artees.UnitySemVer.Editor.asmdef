@@ -1,0 +1,17 @@
+{
+    "name": "Artees.SemanticVersioning.Editor",
+    "references": [
+        "GUID:c7f2f2911de381941be7186214305448"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
