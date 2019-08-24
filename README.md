@@ -1,6 +1,8 @@
 # Unity SemVer
 A convenient way to edit and compare version numbers according to the [Semantic Versioning 2.0.0](https://semver.org/) specification. Also includes a property drawer for Unity.
 
+![Property drawer](https://github.com/Artees/Unity-SemVer/raw/master/SemVerDrawer.png)
+
 # Installation
 Use [my package registry](https://artees.games/upm).
 
@@ -30,5 +32,3 @@ foreach (var message in result.Errors)
     Debug.LogWarning(message);
 }
 ```
-
-![Property drawer](https://github.com/Artees/Unity-SemVer/raw/master/SemVerDrawer.png)
