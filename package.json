@@ -1,6 +1,6 @@
 {
     "name": "games.artees.semver",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "displayName": "Unity SemVer",
     "description": "A convenient way to edit and compare version numbers according to the Semantic Versioning 2.0.0 specification. Also includes a property drawer for Unity.",
     "unity": "2019.2",
