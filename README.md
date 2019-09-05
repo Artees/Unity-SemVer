@@ -4,7 +4,7 @@ A convenient way to edit and compare version numbers according to the [Semantic 
 ![Property drawer](https://github.com/Artees/Unity-SemVer/raw/master/SemVerDrawer.png)
 
 # Installation
-Use [my package registry](https://artees.games/upm).
+Install the package **games.artees.semver** using [my package registry](https://artees.games/upm).
 
 # Usage
 Use the `Artees.UnitySemVer.SemVer` class or apply the `Artees.UnitySemVer.SemVerAttribute` attribute to a string field.
