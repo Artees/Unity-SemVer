@@ -36,7 +36,7 @@ namespace Artees.UnitySemVer.Editor
         {
             InitPosition(position);
             property.isExpanded =
-                EditorGUI.Foldout(GetNextPosition(), property.isExpanded, $"{_fieldName} {Target}", true);
+                EditorGUI.Foldout(GetNextPosition(), property.isExpanded, $"{label.text} {Target}", true);
             if (!property.isExpanded) return Target;
             EditorGUI.indentLevel++;
             CreateMajorField();
