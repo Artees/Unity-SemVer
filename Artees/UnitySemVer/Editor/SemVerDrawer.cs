@@ -35,9 +35,8 @@ namespace Artees.UnitySemVer.Editor
         protected SemVer DrawSemVer(Rect position, SerializedProperty property, GUIContent label)
         {
             InitPosition(position);
-            label.text = $"{label.text} {Target}";
             property.isExpanded =
-                EditorGUI.Foldout(GetNextPosition(), property.isExpanded, label.text, true);
+                EditorGUI.Foldout(GetNextPosition(), property.isExpanded, $"{label.text} {Target}", true);
             if (!property.isExpanded) return Target;
             EditorGUI.indentLevel++;
             CreateMajorField();
