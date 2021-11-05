@@ -11,7 +11,6 @@ namespace Artees.UnitySemVer.Editor
 
         private float _yMin;
         private Rect _position;
-        private string _fieldName;
 
         protected SemVer Target { private get; set; }
         protected bool DrawAutoBuildPopup { private get; set; }
@@ -27,8 +26,6 @@ namespace Artees.UnitySemVer.Editor
             var source = fieldInfo.GetValue(targetObject) as SemVer;
             if (source == null) return;
             Target = source.Clone();
-            if (_fieldName == null)
-                _fieldName = label.text;
             var corrected = DrawSemVer(position, property, label);
             if (corrected == source && corrected.autoBuild == source.autoBuild) return;
             EditorUtility.SetDirty(targetObject);
@@ -38,9 +35,8 @@ namespace Artees.UnitySemVer.Editor
         protected SemVer DrawSemVer(Rect position, SerializedProperty property, GUIContent label)
         {
             InitPosition(position);
-            label.text = $"{_fieldName} {Target}";
             property.isExpanded =
-                EditorGUI.Foldout(GetNextPosition(), property.isExpanded, label.text, true);
+                EditorGUI.Foldout(GetNextPosition(), property.isExpanded, $"{_fieldName} {Target}", true);
             if (!property.isExpanded) return Target;
             EditorGUI.indentLevel++;
             CreateMajorField();
